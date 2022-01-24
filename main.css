@@ -1,0 +1,133 @@
+@charset "UTF-8";
+input, button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+input[type="radio"] {
+	-webkit-appearance: radio;
+	-moz-appearance: radio;
+	appearance: radio;
+}
+input[type="checkbox"] {
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+	appearance: checkbox;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+div, section, h1, h2, p {
+	box-sizing: border-box;
+}
+img {
+	display: block;
+	width: 100%;
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	line-height: 1;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+	min-height: 100%;
+	background: #fff;
+	color: #041226;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+::selection {
+	background: #248cbc;
+	color: #fff;
+}
+img::selection {
+	background: #248cbc;
+}
+p {
+	line-height: 1.75em;
+  font-size: 1.1em;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.blue {
+	color: #007bad;
+}
+.background-blue {
+	background: #007bad;
+}
+.constrained {
+	margin: 0 auto;
+	max-width: 1440px;
+}
+ul li span[class^="icon-"] {
+	display: inline-block;
+	margin-right: 0.5em;
+	transform: translateY(0.2em);
+}
+.product-grid {
+	display: grid;
+}
+.product {
+	border-top: 1px solid #e8eae0;
+	padding-top: 1em;
+}
+.product-details {
+	background: #e8eae0;
+	color: #969696;
+	padding: 5vh 3vh 3vh 3vh;
+}
+.product-details ul {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+@media screen and (max-width:600px) {
+	.padded {
+		padding: 3vh;
+	}
+	.product-grid {
+		grid-template-columns: 1fr;
+		grid-gap: 3vh;
+	}
+}
+@media screen and (min-width:601px) {
+	.padded {
+		padding: 5vh;
+	}
+	.product-details ul {
+		column-count: 2;
+	}
+	.product-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 5vh;
+	}
+}
+@media screen and (min-width:1025px) {
+
+}
