@@ -10,17 +10,33 @@
 <title>Rodo</title>
 </head>
 <body>
-  <header>
-
-  </header>
+  <!--<header>
+    <nav class="background-light-blue white">
+      <div id="logo">OnPoint<br> Company LLc</div>
+      <div id="primary-links">
+        <a href="javascript:void(0);" class="white"><span class="icon-car"></span> My Lease</a>
+        <a href="javascript:void(0);" class="white"><span class="icon-open-heart"></span> My Showroom</a>
+      </div>
+      <div id="welcome">Hi, Tom <span class="icon-caret-down"></span></div>
+    </nav>
+    <div class="background-blue" id="search-bar">
+      <div id="search-area">
+        <input type="text" name="search" id="search" placeholder="Search">
+        <span class="icon-search"></span>
+      </div>
+    </div>
+  </header>-->
   <section class="constrained padded">
     <div class="product-grid">
       <div class="product">
-        <span class="heart"></span>
+        <a href="javascript:void(0);" class="favorite-heart light-blue"><span class="icon-closed-heart"></span></a>
         <h2 class="blue">Infiniti QX50 base, 2017</h2>
+        <div class="special">
+          
+        </div>
         <div class="product-top">
-          <div class="product-prices">
-            $275
+          <div class="product-prices grey">
+            <sup>$</sup>275
           </div>
           <div class="product-finishes">
             Exterior: Metalic Silver
@@ -44,8 +60,20 @@
         </div>
       </div>
       <div class="product">
-        <span class="heart"></span>
-        <h2></h2>
+        <a href="javascript:void(0);" class="favorite-heart light-blue"><span class="icon-closed-heart"></span></a>
+        <h2 class="blue">Infiniti QX50 base, 2017</h2>
+        <div class="special blue">
+          <span class="special-flag background-blue white">Special</span> <sup>$</sup>303 Expires in 12 hrs
+        </div>
+        <div class="product-top">
+          <div class="product-prices grey">
+            <sup>$</sup>275
+          </div>
+          <div class="product-finishes">
+            Exterior: Metalic Silver
+            Interior: Obsidian Black
+          </div>
+        </div>
         <div class="product-details">
           <img src="" alt="">
           <ul>
@@ -64,5 +92,61 @@
       </div>
     </div>
   </section>
+  <footer class="padded background-blue white">
+    <div id="footer-link-menu">
+      <div>
+        <a href="javascript:void(0);" class="footer-heading">Info <span class="icon-caret-down"></span></a>
+        <div class="footer-links centered">
+          <a href="javascript:void(0);">About</a>
+          <a href="javascript:void(0);">FAQ</a>
+          <a href="javascript:void(0);">How it Works</a>
+          <a href="javascript:void(0);">Blog</a>
+          <a href="javascript:void(0);">Press</a>
+          <a href="javascript:void(0);">Terms of Use</a>
+          <a href="javascript:void(0);">Privacy Policy</a>
+        </div>
+      </div>
+      <div>
+        <a href="javascript:void(0);" class="footer-heading">Contact <span class="icon-caret-down"></span></a>
+        <div class="footer-links">
+          212-honcker
+        </div>
+      </div>
+      <div class="centered">
+        <a href="javascript:void(0);" class="social-link"><span class="icon-facebook"></span></a>
+        <a href="javascript:void(0);" class="social-link"><span class="icon-twitter"></span></a>
+        <a href="javascript:void(0);" class="social-link"><span class="icon-instagram"></span></a>
+      </div>
+    </div>
+    <p class="centered font-smaller">&copy;2019 Honcker. All rights reserved.</p>
+  </footer>
+  <script type="text/javascript">
+    let favorites = document.querySelectorAll('.favorite-heart');
+    favorites.forEach(addFavoriteClick);
+    
+    function addFavoriteClick(item) {
+      item.addEventListener('click', function() {
+        let icon = this.querySelector('span');
+        if (icon.classList.contains('icon-open-heart')) {
+          icon.classList.add('icon-closed-heart');
+          icon.classList.remove('icon-open-heart');
+        }
+        else {
+          icon.classList.add('icon-open-heart');
+          icon.classList.remove('icon-closed-heart');
+        }        
+      });
+    }
+    
+    let footerHeadings = document.querySelectorAll('.footer-heading');
+    footerHeadings.forEach(addFooterClick);
+    
+    function addFooterClick(item) {
+      item.addEventListener('click', function() {
+        this.classList.toggle('active');
+        this.parentNode.childNodes[3].classList.toggle('active');
+      });
+    }
+  </script>
 </body>
 </html>
