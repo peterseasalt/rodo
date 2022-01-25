@@ -3,48 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:image" content="https://pureoceansalt.com/images/pure-ocean-og-image.jpg" />
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link href="main.css" rel="stylesheet">
 <link href="https://file.myfontastic.com/JmXM7xYUR4i95rp8x8kMkN/icons.css" rel="stylesheet">
-<title>Rodo</title>
+<title>Honcker Car Sales</title>
 </head>
 <body>
-  <!--<header>
-    <nav class="background-light-blue white">
-      <div id="logo">OnPoint<br> Company LLc</div>
-      <div id="primary-links">
-        <a href="javascript:void(0);" class="white"><span class="icon-car"></span> My Lease</a>
-        <a href="javascript:void(0);" class="white"><span class="icon-open-heart"></span> My Showroom</a>
-      </div>
-      <div id="welcome">Hi, Tom <span class="icon-caret-down"></span></div>
-    </nav>
-    <div class="background-blue" id="search-bar">
-      <div id="search-area">
-        <input type="text" name="search" id="search" placeholder="Search">
-        <span class="icon-search"></span>
+  <header>
+    <div class="background-light-blue white">
+      <div id="main-bar" class="constrained">
+        <div id="logo"><span id="logo-on">On</span><span id="logo-point">Point</span><br> Company LLc</div>
+        <div id="main-links">
+          <a href="javascript:void(0);"><span class="icon-car"></span><span id="my-lease" class="mobile-hide smaller">My Lease</span></a>
+          <a href="javascript:void(0);"><span class="icon-open-heart"></span><span class="mobile-hide smaller">My Showroom</span></a>
+          <a href="javascript:void(0);" id="account-link"><span class="icon-person"></span></a>
+        </div>
+        <div id="user-welcome">
+          <a href="javascript:void(0);">Hi, Tom <span class="icon-caret-down"></span></a>
+        </div>
       </div>
     </div>
-  </header>-->
-  <section class="constrained padded">
+    <div class="background-blue white">
+      <div id="search-bar" class="constrained">
+        <div id="search-container">
+          <input type="text" name="search" id="search" placeholder="Search" autocomplete="off">
+          <span class="icon-search light-blue"></span>
+          <div id="search-results" class="grey">
+            <p class="black">Honda</p>
+            <p class="light-blue">- Honda Accord</p>
+            <p class="indent">Honda Accord EX<br>
+              Honda Accord EX-L<br>
+              Honda Accord LX<br>
+              Honda Accord Sport</p>
+            <p class="light-blue">- Honda Accord Hybrid</p>
+            <p class="indent">Honda Accord Hybrid Base<br>
+              Honda Accord Hybrid EX<br>
+              Honda Accord Hybrid EX-L<br>
+              Honda Accord Hybrid Touring</p>
+          </div>
+        </div>
+        <div id="showroom-text-count">4 cars in my Showroom</div>
+        <div id="filters">
+          <a href="javascript:void(0);" class="all-caps">Best Terms <span class="icon-caret-down"></span></a>
+          <a href="javascript:void(0);" class="all-caps">10,000 MPY <span class="icon-caret-down"></span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="constrained">
     <div class="product-grid">
       <div class="product">
+        <div class="product-top">
         <a href="javascript:void(0);" class="favorite-heart light-blue"><span class="icon-closed-heart"></span></a>
         <h2 class="blue">Infiniti QX50 base, 2017</h2>
-        <div class="special">
-          
-        </div>
-        <div class="product-top">
+        <div class="special"></div>
+        <div class="product-top-level">
           <div class="product-prices grey">
-            <sup>$</sup>275
+            <p class="price-block"><span class="product-price"><sup>$</sup>275</span> <span class="all-caps block">Monthly Payment</span> Over 36 months</p>
+            <p class="price-block"><span class="product-price"><sup>$</sup>1200</span> <span class="all-caps block">Due at signing <span class="icon-info"></span></span></p>
           </div>
           <div class="product-finishes">
-            Exterior: Metalic Silver
-            Interior: Obsidian Black
+            <p class="finish grey"><span class="swatch silver"></span>Exterior: Metalic Silver</p>
+            <p class="finish grey"><span class="swatch obsidian"></span>Interior: Obsidian Black</p>
           </div>
         </div>
+      </div>
+      <div class="product-bottom">
+        <img src="images/car-1.jpg" alt="Infiniti QX50">
         <div class="product-details">
-          <img src="" alt="">
           <ul>
             <li><span class="icon-seats"></span>5 seats (bench)</li>
             <li><span class="icon-wheels"></span>18"/8" wheels</li>
@@ -59,44 +85,111 @@
           </ul>
         </div>
       </div>
+      </div>
       <div class="product">
-        <a href="javascript:void(0);" class="favorite-heart light-blue"><span class="icon-closed-heart"></span></a>
-        <h2 class="blue">Infiniti QX50 base, 2017</h2>
-        <div class="special blue">
-          <span class="special-flag background-blue white">Special</span> <sup>$</sup>303 Expires in 12 hrs
-        </div>
         <div class="product-top">
-          <div class="product-prices grey">
-            <sup>$</sup>275
+          <a href="javascript:void(0);" class="favorite-heart light-blue"><span class="icon-closed-heart"></span></a>
+          <h2 class="blue">Infiniti QX50 base, 2017</h2>
+          <div class="special blue">
+            <span class="special-flag background-blue white">Special</span> <span class="special-price strikethrough"><sup>$</sup>303</span> <span class="expires">Expires in 12 hrs</span>
           </div>
-          <div class="product-finishes">
-            Exterior: Metalic Silver
-            Interior: Obsidian Black
+          <div class="product-top-level">
+            <div class="product-prices grey">
+              <p class="price-block"><span class="product-price"><sup>$</sup>275</span> <span class="all-caps block">Monthly Payment</span> Over 36 months</p>
+              <p class="price-block"><span class="product-price"><sup>$</sup>1200</span> <span class="all-caps block">Due at signing</span></p>
+            </div>
+            <div class="product-finishes">
+              <p class="finish grey"><span class="swatch silver"></span>Exterior: Metalic Silver</p>
+              <p class="finish grey"><span class="swatch obsidian"></span>Interior: Obsidian Black</p>
+            </div>
           </div>
         </div>
-        <div class="product-details">
-          <img src="" alt="">
-          <ul>
-            <li><span class="icon-seats"></span>5 seats (bench)</li>
-            <li><span class="icon-wheels"></span>18"/8" wheels</li>
-            <li><span class="icon-engine"></span>6 CYL AWD</li>
-            <li><span class="icon-cargo"></span>cargo space 27.1</li>
-            <li><span class="icon-transmission"></span>automatic</li>
-            <li><span class="icon-doors"></span>4 doors</li>
-            <li><span class="icon-gps"></span>GPS navigation</li>
-            <li><span class="icon-mileage"></span>24/17C mileage</li>
-            <li><span class="icon-rearview-camera"></span>rear view camera</li>
-            <li><span class="icon-moon-roof"></span>moon roof</li>
-          </ul>
+        <div class="product-bottom">
+          <img src="images/car-2.jpg" alt="Infiniti QX50">
+          <div class="product-details">
+            <ul>
+              <li><span class="icon-seats"></span>5 seats (bench)</li>
+              <li><span class="icon-wheels"></span>18"/8" wheels</li>
+              <li><span class="icon-engine"></span>6 CYL AWD</li>
+              <li><span class="icon-cargo"></span>cargo space 27.1</li>
+              <li><span class="icon-transmission"></span>automatic</li>
+              <li><span class="icon-doors"></span>4 doors</li>
+              <li><span class="icon-gps"></span>GPS navigation</li>
+              <li><span class="icon-mileage"></span>24/17C mileage</li>
+              <li><span class="icon-rearview-camera"></span>rear view camera</li>
+              <li><span class="icon-moon-roof"></span>moon roof</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-top">
+          <a href="javascript:void(0);" class="favorite-heart light-blue"><span class="icon-closed-heart"></span></a>
+          <h2 class="blue">Infiniti QX50 base, 2017</h2>
+          <div class="special"></div>
+          <div class="product-top-level">
+            <div class="product-prices grey">
+              <p class="price-block"><span class="product-price"><sup>$</sup>275</span> <span class="all-caps block">Monthly Payment</span> Over 36 months</p>
+              <p class="price-block"><span class="product-price"><sup>$</sup>1200</span> <span class="all-caps block">Due at signing</span></p>
+            </div>
+            <div class="product-finishes">
+              <p class="finish grey"><span class="swatch silver"></span>Exterior: Metalic Silver</p>
+              <p class="finish grey"><span class="swatch obsidian"></span>Interior: Obsidian Black</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <img src="images/car-1.jpg" alt="Infiniti QX50">
+          <div class="product-details">
+            <ul>
+              <li><span class="icon-seats"></span>5 seats (bench)</li>
+              <li><span class="icon-wheels"></span>18"/8" wheels</li>
+              <li><span class="icon-engine icon-larger"></span>6 CYL AWD</li>
+              <li><span class="icon-cargo"></span>cargo space 27.1</li>
+              <li><span class="icon-transmission"></span>automatic</li>
+              <li><span class="icon-doors"></span>4 doors</li>
+              <li><span class="icon-gps"></span>GPS navigation</li>
+              <li><span class="icon-mileage"></span>24/17C mileage</li>
+              <li><span class="icon-rearview-camera"></span>rear view camera</li>
+              <li><span class="icon-moon-roof"></span>moon roof</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-top">
+          <a href="javascript:void(0);" class="favorite-heart light-blue"><span class="icon-closed-heart"></span></a>
+          <h2 class="blue">Infiniti QX50 base, 2017</h2>
+          <div class="special">
+            <p class="grey sorry">Sorry, this vehicle is no longer available</p>
+            <a href="javascript:void(0);" class="button">View Similar</a>
+          </div>
+        </div>
+        <div class="product-bottom">
+          <img src="images/car-2.jpg" alt="Infiniti QX50">
+          <div class="product-details">
+            <ul>
+              <li><span class="icon-seats"></span>5 seats (bench)</li>
+              <li><span class="icon-wheels"></span>18"/8" wheels</li>
+              <li><span class="icon-engine"></span>6 CYL AWD</li>
+              <li><span class="icon-cargo"></span>cargo space 27.1</li>
+              <li><span class="icon-transmission"></span>automatic</li>
+              <li><span class="icon-doors"></span>4 doors</li>
+              <li><span class="icon-gps"></span>GPS navigation</li>
+              <li><span class="icon-mileage"></span>24/17C mileage</li>
+              <li><span class="icon-rearview-camera"></span>rear view camera</li>
+              <li><span class="icon-moon-roof"></span>moon roof</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <footer class="padded background-blue white">
-    <div id="footer-link-menu">
+    <div id="footer-three-column" class="constrained">
       <div>
         <a href="javascript:void(0);" class="footer-heading">Info <span class="icon-caret-down"></span></a>
-        <div class="footer-links centered">
+        <div id="footer-main-links" class="mobile-menu">
           <a href="javascript:void(0);">About</a>
           <a href="javascript:void(0);">FAQ</a>
           <a href="javascript:void(0);">How it Works</a>
@@ -108,11 +201,15 @@
       </div>
       <div>
         <a href="javascript:void(0);" class="footer-heading">Contact <span class="icon-caret-down"></span></a>
-        <div class="footer-links">
-          212-honcker
+        <div id="footer-contact-links" class="mobile-menu">
+          <a href="tel:2124662537" id="footer-phone" class="light-blue">212-HONCKER</a>
+          <div>
+            <p>Email us: <a href="mailto:info@honcker.com" class="light-blue">info@honcker.com</a></p>
+            <p>Join our dealer network: <a href="mailto:dealer@honcker.com" class="light-blue">dealer@honcker.com</a></p>
+          </div>
         </div>
       </div>
-      <div class="centered">
+      <div id="social-links">
         <a href="javascript:void(0);" class="social-link"><span class="icon-facebook"></span></a>
         <a href="javascript:void(0);" class="social-link"><span class="icon-twitter"></span></a>
         <a href="javascript:void(0);" class="social-link"><span class="icon-instagram"></span></a>
@@ -121,9 +218,18 @@
     <p class="centered font-smaller">&copy;2019 Honcker. All rights reserved.</p>
   </footer>
   <script type="text/javascript">
+    let searchField = document.getElementById('search');
+    let searchResults = document.getElementById('search-results');
+    searchField.addEventListener('focus', function() {
+      searchResults.classList.add('active');
+    });
+    searchField.addEventListener('focusout', function() {
+      searchResults.classList.remove('active');
+    });
+
     let favorites = document.querySelectorAll('.favorite-heart');
     favorites.forEach(addFavoriteClick);
-    
+
     function addFavoriteClick(item) {
       item.addEventListener('click', function() {
         let icon = this.querySelector('span');
@@ -134,13 +240,13 @@
         else {
           icon.classList.add('icon-open-heart');
           icon.classList.remove('icon-closed-heart');
-        }        
+        }
       });
     }
-    
+
     let footerHeadings = document.querySelectorAll('.footer-heading');
     footerHeadings.forEach(addFooterClick);
-    
+
     function addFooterClick(item) {
       item.addEventListener('click', function() {
         this.classList.toggle('active');
